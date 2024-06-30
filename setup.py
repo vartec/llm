@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-VERSION = "0.13.1"
+VERSION = "0.14"
 
 
 def get_long_description():
@@ -55,7 +55,7 @@ setup(
             "numpy",
             "pytest-httpx",
             "cogapp",
-            "mypy",
+            "mypy>=1.10.0",
             "black>=24.1.0",
             "ruff",
             "types-click",

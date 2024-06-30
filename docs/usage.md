@@ -18,9 +18,9 @@ To disable streaming and only return the response once it has completed:
 ```bash
 llm 'Ten names for cheesecakes' --no-stream
 ```
-To switch from ChatGPT 3.5 (the default) to GPT-4 Turbo:
+To switch from ChatGPT 3.5 (the default) to GPT-4o:
 ```bash
-llm 'Ten names for cheesecakes' -m gpt-4-turbo
+llm 'Ten names for cheesecakes' -m gpt-4o
 ```
 You can use `-m 4t` as an even shorter shortcut.
 
@@ -305,7 +305,27 @@ OpenAI Chat: gpt-4-0125-preview
   logit_bias: dict, str
   seed: int
   json_object: boolean
-OpenAI Chat: gpt-4-turbo-preview (aliases: gpt-4-turbo, 4-turbo, 4t)
+OpenAI Chat: gpt-4-turbo-2024-04-09
+  temperature: float
+  max_tokens: int
+  top_p: float
+  frequency_penalty: float
+  presence_penalty: float
+  stop: str
+  logit_bias: dict, str
+  seed: int
+  json_object: boolean
+OpenAI Chat: gpt-4-turbo (aliases: gpt-4-turbo-preview, 4-turbo, 4t)
+  temperature: float
+  max_tokens: int
+  top_p: float
+  frequency_penalty: float
+  presence_penalty: float
+  stop: str
+  logit_bias: dict, str
+  seed: int
+  json_object: boolean
+OpenAI Chat: gpt-4o (aliases: 4o)
   temperature: float
   max_tokens: int
   top_p: float
@@ -351,6 +371,6 @@ OpenAI Completion: gpt-3.5-turbo-instruct (aliases: 3.5-instruct, chatgpt-instru
 
 When running a prompt you can pass the full model name or any of the aliases to the `-m/--model` option:
 ```bash
-llm -m chatgpt-16k \
+llm -m 4o \
   'As many names for cheesecakes as you can think of, with detailed descriptions'
 ```

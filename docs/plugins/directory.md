@@ -12,6 +12,7 @@ These plugins all help you run LLMs directly on your own computer:
 - **[llm-gpt4all](https://github.com/simonw/llm-gpt4all)** adds support for various models released by the [GPT4All](https://gpt4all.io/) project that are optimized to run locally on your own machine. These models include versions of Vicuna, Orca, Falcon and MPT - here's [a full list of models](https://observablehq.com/@simonw/gpt4all-models).
 - **[llm-mpt30b](https://github.com/simonw/llm-mpt30b)** adds support for the [MPT-30B](https://huggingface.co/mosaicml/mpt-30b) local model.
 - **[llm-ollama](https://github.com/taketwo/llm-ollama)** adds support for local models run using [Ollama](https://ollama.ai/).
+- **[llm-llamafile](https://github.com/simonw/llm-llamafile)** adds support for local models that are running locally using [llamafile](https://github.com/Mozilla-Ocho/llamafile).
 
 ## Remote APIs
 
@@ -23,6 +24,8 @@ These plugins can be used to interact with remotely hosted models via their API:
 - **[llm-claude-3](https://github.com/simonw/llm-claude-3)** supports Anthropic's [Claude 3 family](https://www.anthropic.com/news/claude-3-family) of models.
 - **[llm-command-r](https://github.com/simonw/llm-command-r)** supports Cohere's Command R and [Command R Plus](https://txt.cohere.com/command-r-plus-microsoft-azure/) API models.
 - **[llm-reka](https://github.com/simonw/llm-reka)** supports the [Reka](https://www.reka.ai/) family of models via their API.
+- **[llm-perplexity](https://github.com/hex/llm-perplexity)** by Alexandru Geana supports the [Perplexity Labs](https://docs.perplexity.ai/) API models, including `llama-3-sonar-large-32k-online` which can search for things online and `llama-3-70b-instruct`.
+- **[llm-groq](https://github.com/angerman/llm-groq)** by Moritz Angermann provides access to fast models hosted by [Groq](https://console.groq.com/docs/models).
 - **[llm-anyscale-endpoints](https://github.com/simonw/llm-anyscale-endpoints)** supports models hosted on the [Anyscale Endpoints](https://app.endpoints.anyscale.com/) platform, including Llama 2 70B.
 - **[llm-replicate](https://github.com/simonw/llm-replicate)** adds support for remote models hosted on [Replicate](https://replicate.com/), including Llama 2 from Meta AI.
 - **[llm-fireworks](https://github.com/simonw/llm-fireworks)** supports models hosted by [Fireworks AI](https://fireworks.ai/).
@@ -30,7 +33,7 @@ These plugins can be used to interact with remotely hosted models via their API:
 - **[llm-openrouter](https://github.com/simonw/llm-openrouter)** provides access to models hosted on [OpenRouter](https://openrouter.ai/).
 - **[llm-cohere](https://github.com/Accudio/llm-cohere)** by Alistair Shepherd provides `cohere-generate` and `cohere-summarize` API models, powered by [Cohere](https://cohere.com/).
 - **[llm-bedrock-anthropic](https://github.com/sblakey/llm-bedrock-anthropic)** by Sean Blakey adds support for Claude and Claude Instant by Anthropic via Amazon Bedrock.
-- **[llm-bedrock-meta](https://github.com/flabat/llm-bedrock-meta)** by Fabian Labat  adds support for Llama 2 by Meta via Amazon Bedrock.
+- **[llm-bedrock-meta](https://github.com/flabat/llm-bedrock-meta)** by Fabian Labat adds support for Llama 2 and Llama 3 by Meta via Amazon Bedrock.
 - **[llm-together](https://github.com/wearedevx/llm-together)** adds support for the [Together AI](https://www.together.ai/) extensive family of hosted openly licensed models.
 
 If an API model host provides an OpenAI-compatible API you can also [configure LLM to talk to it](https://llm.datasette.io/en/stable/other-models.html#openai-compatible-models) without needing an extra plugin.
